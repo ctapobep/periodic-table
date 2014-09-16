@@ -16,6 +16,10 @@
     }();
   });
 
+  var elementsWithElectronConfiguration = function () {
+
+  }();
+
   var elements = [
     { "name": "Hydrogen",
       "symbol": "H",

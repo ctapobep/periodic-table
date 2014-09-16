@@ -1,0 +1,28 @@
+{
+  "name": "periodic-table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "karma": "^0.12.23",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctapobep/periodic-table.git"
+  },
+  "author": "Stanislav Bashkyrtsev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctapobep/periodic-table/issues"
+  },
+  "homepage": "https://github.com/ctapobep/periodic-table"
+}
