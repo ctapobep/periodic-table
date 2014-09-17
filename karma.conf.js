@@ -4,17 +4,13 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
     files: ['js/lib/angular.min.js', 'js/lib/angular-mocks.js','js/*.js', 'test/*.js'],
     exclude: [],
-    preprocessors: { },
-
-    // test results reporter to use
-    // possible values: 'dots', 'progress'
-    // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    preprocessors: {'js/*.js': 'coverage' },
+    reporters: ['progress', 'coverage'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_DEBUG,
     autoWatch: true,
     browsers: ['Chrome'],
-    singleRun: true
+    singleRun: false
   });
 };

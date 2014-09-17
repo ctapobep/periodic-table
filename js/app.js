@@ -10,15 +10,27 @@
           row++;
           table[row] = [];
         }
-        table[row].push(elements[i]);
+        var element = elements[i];
+        element.electronConfigurationArray = getElectronConfigurationAsArray(element);
+        table[row].push(element);
       }
       return table;
     }();
+
+    $scope.elements = function(){
+      var result = [];
+      for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+        element.electronConfigurationArray = getElectronConfigurationAsArray(element);
+        result.push(element);
+      }
+      return result;
+    }();
   });
 
-  var elementsWithElectronConfiguration = function () {
-
-  }();
+  var getElectronConfigurationAsArray = function (element) {
+    return [[1]];
+  };
 
   var elements = [
     { "name": "Hydrogen",
